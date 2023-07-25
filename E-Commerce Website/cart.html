@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75ca38c706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.jpeg" class="logo" alt="acab logo" width="120" height="60"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lgbag"><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width = "100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>₹5600</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹5600</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>FANCY MENS HALF SLEEVE T SHIRT</td>
+                    <td>₹5000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹5000</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Apple Watch</td>
+                    <td>₹81,000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹81,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon" id="Couponid">
+                <button class="normal" onclick="couponfun()">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹5600</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>₹5600</strong></td>
+                </tr>
+            </table>
+            <div id="button-gp">
+                <button class="normal" onclick="window.location.href='orderplaced.html'">Proceed To Checkout</button>
+                <button class="normal" onclick="window.location.href='ordercanceled.html'">Cancel</button>
+            </div>
+        </div>     
+    </section>
+
+    <footer class="section-p1"> 
+        <div class="col">
+            <img class="logo" src="img/logo.jpeg" class="logo" alt="acab logo" width="120" height="60">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Clement Town, Dehradun , Uttarakhand , India</p>
+            <p><strong>Phone:</strong>(+91)9957174733, (+91)9458954230</p>
+            <p><strong>Hours:</strong> 9:00 - 18:00, Monday - Friday</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="App Store">
+                <img src="img/pay/play.jpg" alt="Play Store">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="Payment apps">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>©2023, BCA 4A - E-Commerce Website Mini Project</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
